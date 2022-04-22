@@ -1,0 +1,25 @@
+{
+    "name": "apish-syntax",
+    "displayName": "APISH Syntax",
+    "description": "APISH Syntax support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.66.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "apish",
+            "aliases": ["APISH", "apish"],
+            "extensions": [".api", ".models"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "apish",
+            "scopeName": "source.apish",
+            "path": "./syntaxes/apish.tmLanguage.json"
+        }]
+    }
+}
